@@ -1,0 +1,132 @@
+/***********************
+		FONTS
+***********************/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+* {
+	font-family: 'Lato', sans-serif;
+}
+/**********************
+		LOAD
+**********************/
+#load {
+	
+}
+/**********************
+		NAV
+**********************/
+#nav {
+	position: fixed;
+	right: 0;
+	top: 30%;
+}
+#nav .block{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-weight: 700;
+}
+#nav a:nth-of-type(2) {
+	border-top: none;	
+}
+#nav a {
+	color: #00a4eb;
+	text-decoration: none;
+	background-color: #fff;
+	display: block;
+	padding: 16px;
+	border: 1px solid #00a4eb;
+	cursor: pointer;
+}
+#nav a:hover {
+	background-color: #00a4eb;
+	color: #fff;
+}
+#nav a.active {
+	background-color: #00a4eb;
+	color: #fff;
+}
+/**********************
+		BLOCKS
+**********************/	
+#alpha {
+	background: url(img/bg.jpg) no-repeat center fixed;
+	background-size: cover;
+	height: 100vh;
+}
+#alpha .logo {
+	font-weight: 300;
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+	position: fixed;
+}
+#alpha .logo span {
+	color: #00a4eb;
+	font-weight: 700;
+}
+#alpha h1 {
+	color: #fff;
+	font-size: 150px;
+}
+#alpha h1 span {
+	color: #00a4eb;
+}
+#bravo {
+	background-color: #fff;
+	height: 50vh;
+}
+#bravo .meImg {
+	border: 5px solid #00a4eb;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 120px auto 0 auto;
+}
+#bravo .meImg img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+#bravo p {
+	color: #000;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 35px;
+	letter-spacing: .7px;
+	margin-top: 150px;
+}
+#gamma {
+	background-color: #f3f3f4;
+	height: 50vh;
+}
+#gamma .col-2 {
+	text-align: center;
+}
+#gamma img {
+	width: 80%;
+	height: auto;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	-webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#gamma img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+#delta {
+	background-color: #000;
+	height: 50vh;
+}
+#zeta {
+	background-color: #F32427;
+	height: 100vh;
+	background: url(img/bg2.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+
+	
