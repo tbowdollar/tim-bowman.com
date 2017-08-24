@@ -1,0 +1,64 @@
+/****************
+FONTS & TYPE
+****************/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+
+* {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+.wrapper {
+	opacity: 0;
+	transition: all 1s ease;
+}
+/****************
+HEADER
+*****************/
+#header {
+	height: 100px;
+	background-color: transparent;
+}
+#header .col-6 {
+	padding: 50px 60px;
+}
+#nav {
+	padding:0;
+	margin: 0;
+	float: right;
+	list-style: none;
+}
+#nav li {
+	display: inline-block;
+}
+#nav li a {
+	color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 21px 13px 51px;
+}
+/****************
+HERO
+*****************/
+#alpha {
+	height: 100vh;
+	background-image:url(img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#alpha .container {
+	max-width: 100%;
+}
+#hero h1 {
+	text-align:center;
+	color: #fff;
+	font-size: 60px;
+	position: relative;
+	text-transform: uppercase;
+	top: 160px;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+	transition: all 1s ease;
+}
