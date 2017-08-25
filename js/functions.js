@@ -44,7 +44,7 @@ var heroTxt = ['Front-End Developer', 'Sydney', 'Tim Bowman'];
 
 				// about sequence
 
-				var aboutTxt = ['Emails', 'Websites', 'Landing Pages', 'Innovation', 'Coding'];
+				var aboutTxt = ['Emails', 'Websites', 'Web Apps', 'Landing Pages', 'Innovation', 'Coding'];
 
 				        aboutSequence(0);
 				        function aboutSequence(i) {
@@ -84,5 +84,10 @@ window.addEventListener('scroll', function() {
 		fadeIn(wrapper[2]);
 	} else {
 		fadeOut(wrapper[2]);
+	}
+	if(window.pageYOffset > 800) {
+		fadeIn(wrapper[3]);
+	} else {
+		fadeOut(wrapper[3]);
 	}
 });
