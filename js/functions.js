@@ -3,6 +3,9 @@ var wrapper = document.getElementsByClassName('wrapper');
 var hero = document.getElementById('hero').getElementsByTagName('h1')[0];
 var header = document.getElementById('header');
 var aboutspan = document.getElementById('about').getElementsByTagName('span')[0];
+const burger = document.getElementsByClassName('burger')[0];
+var br = document.getElementsByClassName('br');
+var nav = document.getElementById('nav');
 
 
 // functions
@@ -17,6 +20,9 @@ function addClass(e, c) {
 }
 function removeClass(e, c) {
 	e.classList.remove(c);
+}
+function toggleClass(e,c) {
+	e.classList.toggle(c);
 }
 // hero sequence
 var heroTxt = ['Front-End Developer', 'Sydney', 'Tim Bowman'];
@@ -90,4 +96,11 @@ window.addEventListener('scroll', function() {
 	} else {
 		fadeOut(wrapper[3]);
 	}
+});
+
+burger.addEventListener('click', function() {
+  toggleClass(br[1], 'hide');
+  toggleClass(br[0], 'openL');
+  toggleClass(br[2], 'openR');
+  toggleClass(nav, 'active');
 });
