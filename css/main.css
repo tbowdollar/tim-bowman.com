@@ -17,9 +17,23 @@ HEADER
 #header {
 	height: 100px;
 	background-color: transparent;
-}
-#header .col-6 {
+	transition: all 1s ease;
+	position: fixed;
+	width: 100%;
 	padding: 50px 60px;
+	z-index: 999;
+}
+#header.active {
+	height: 70px;
+	background-color: #fff;
+	padding: 15px 60px;
+	border-bottom: 1px solid #eeeeee;
+}
+#header.active #nav li a {
+	color: #444;
+}
+#header.active #nav li a:hover {
+	color: #789;
 }
 #nav {
 	padding:0;
@@ -38,6 +52,7 @@ HEADER
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 21px 13px 51px;
+	transition: all 1s ease;
 }
 /****************
 HERO
@@ -57,8 +72,48 @@ HERO
 	font-size: 60px;
 	position: relative;
 	text-transform: uppercase;
-	top: 160px;
+	top: 250px;
 	font-weight: 900;
 	letter-spacing: 0.1em;
 	transition: all 1s ease;
+}
+
+#about {
+background-color: #f7f7f7;
+}
+#about .col-3 {
+	padding: 50px 12px;
+}
+#about .image {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background-image: url(img/tim.jpg);
+	margin: 0 auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#about h2 {
+	color: #444;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+#about h2 span {
+	color: #444;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+#about p {
+	color: #444;
+	letter-spacing: .7px;
+	line-height: 24px;
+}
+#services {
+	background-color: #fff;
+	text-align: center;
 }
