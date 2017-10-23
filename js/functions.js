@@ -25,7 +25,7 @@ function toggleClass(e,c) {
 	e.classList.toggle(c);
 }
 // hero sequence
-var heroTxt = ['Front-End Developer', 'Sydney', 'Tim Bowman'];
+var heroTxt = ['Front End Developer', 'Sydney', 'Tim Bowman'];
 
         heroSequence(0);
         function heroSequence(i) {
