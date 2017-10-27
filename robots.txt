@@ -1,0 +1,3 @@
+# robots.txt for http://tim-bowman.com
+
+User-agent: *
